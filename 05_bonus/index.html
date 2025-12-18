@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
+  <title>Bonus</title>
 
   <link rel="icon" href="favicon.ico" type="image/ico" />
   <!-- Bootstrap -->
@@ -14,10 +14,22 @@
     crossorigin='anonymous' />
 
   <!-- JavaScript -->
-  <script defer src="script.js"></script>
+  
 </head>
 
 <body>
+  <main class="container my-5">
+    <h1 class="mb-4">Bonus Task</h1>
+
+    <div class="mb-3">
+      <label for="inputName" class="form-label">Inserisci nome</label>
+      <input type="text" class="form-control" id="inputName" placeholder="Scrivi qualcosa..." />
+    </div>
+    <button id="greetButton" class="btn btn-primary">Mostra saluto</button>
+    <div id="result" class="mt-4 alert alert-info"></div>
+  </main>
+
+  <script defer src="script.js"></script>
 </body>
 
 </html>
