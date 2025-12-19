@@ -35,7 +35,8 @@ document.addEventListener('DOMContentLoaded', function() {
   this.getElementById('greetButton').addEventListener('click', function() {
     const nameInput = document.getElementById('inputName').value;
     const currentHour = new Date().getHours();
-    const result = greetTimeOfDay(nameInput, currentHour);
+    const currentMinutes = new Date().getMinutes();
+    const result = greetTimeOfDay(nameInput, currentHour) + ` Sono le ${currentHour} e ${currentMinutes} minuti.`;
     const resultDiv = document.getElementById('result');
     resultDiv.textContent = result;
     console.log(result);
